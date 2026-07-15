@@ -55,7 +55,7 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 4.0.0) is a massive upgrade to your AI's capabilities.
+**Agentic Awesome Skills** (Release 4.0.0) is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -68,7 +68,7 @@ Install once; then use Starter Packs in [docs/BUNDLES.md](docs/BUNDLES.md) to fo
 
    ```bash
    # Default path: ~/.agent/skills
-   npx antigravity-awesome-skills
+   npx agentic-awesome-skills
    ```
 
 2. **Verify**:
@@ -129,49 +129,49 @@ To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Curso
 
 ```bash
 # Default: ~/.agent/skills (universal)
-npx antigravity-awesome-skills
+npx agentic
 
 # Cursor
-npx antigravity-awesome-skills --cursor
+npx agentic-awesome-skills --cursor
 
 # Claude Code
-npx antigravity-awesome-skills --claude
+npx agentic-awesome-skills --claude
 
 # Gemini CLI
-npx antigravity-awesome-skills --gemini
+npx agentic-awesome-skills --gemini
 
 # Codex CLI
-npx antigravity-awesome-skills --codex
+npx agentic-awesome-skills --codex
 
 # OpenCode (Universal)
-npx antigravity-awesome-skills
+npx agentic-awesome-skills
 
 # Custom path
-npx antigravity-awesome-skills --path ./my-skills
+npx agentic-awesome-skills --path ./my-skills
 ```
 
-Run `npx antigravity-awesome-skills --help` for all options. If the directory already exists, the installer runs `git pull` to update.
+Run `npx agentic-awesome-skills --help` for all options. If the directory already exists, the installer runs `git pull` to update.
 
 ### Option B: git clone
 
 ```bash
 # Universal (works with most tools)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .agent/skills
 
 # Claude Code specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .claude/skills
 
 # Gemini CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .gemini/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .gemini/skills
 
 # Codex CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .codex/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .codex/skills
 
 # Cursor specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .cursor/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .cursor/skills
 
 # OpenCode specific (Universal path)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone https://github.com/sickn33/agentic-awesome-skills.git .agent/skills
 ```
 
 ---
@@ -183,7 +183,7 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skill
 Use the GitHub package fallback:
 
 ```bash
-npx github:sickn33/antigravity-awesome-skills
+npx github:sickn33/agentic-awesome-skills
 ```
 
 ### Windows clone issues (symlinks)
@@ -191,7 +191,7 @@ npx github:sickn33/antigravity-awesome-skills
 This repository uses symlinks for official skills. Enable Developer Mode or run Git as Administrator, then clone with:
 
 ```bash
-git clone -c core.symlinks=true https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+git clone -c core.symlinks=true https://github.com/sickn33/agentic-awesome-skills.git .agent/skills
 ```
 
 ### Skills installed but not detected by your tool
@@ -208,7 +208,7 @@ git -C ~/.agent/skills pull
 
 ```bash
 rm -rf ~/.agent/skills
-npx antigravity-awesome-skills
+npx agentic-awesome-skills
 ```
 
 ---
